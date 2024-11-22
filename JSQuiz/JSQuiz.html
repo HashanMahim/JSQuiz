@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Page</title>
+    <link rel="stylesheet" href="JSQuiz.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>Quiz Time!</h1>
+        <div id="quiz">
+            <div class="question-container">
+                <p id="question">Question text will appear here</p>
+                <div class="answers">
+                    <button class="answer" onclick="selectAnswer(0)">Answer 1</button>
+                    <button class="answer" onclick="selectAnswer(1)">Answer 2</button>
+                    <button class="answer" onclick="selectAnswer(2)">Answer 3</button>
+                    <button class="answer" onclick="selectAnswer(3)">Answer 4</button>
+                </div>
+            </div>
+            <button id="next-button" onclick="nextQuestion()">Next</button>
+        </div>
+        <div id="result" class="hidden">
+            <h2>Quiz Completed!</h2>
+            <p id="score"></p>
+            <button onclick="restartQuiz()">Restart Quiz</button>
+        </div>
+    </div>
+    <script src="JSQuiz.js"></script>
+</body>
+</html>
